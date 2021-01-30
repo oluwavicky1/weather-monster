@@ -4,31 +4,6 @@ const bcrypt = require("bcrypt-nodejs");
 const cors = require("cors");
 const knex = require("knex");
 
-const multer = require("multer");
-
-const storage = multer.diskStorage({
-  destination: function (req, file, cb) {
-    cb(null, "./uploads");
-  },
-  filename: function (req, file, cb) {
-    cb(null, Date.now() + file.originalname);
-  },
-});
-
-const upload = multer({
-  storage: storage,
-  limits: {
-    fileSize: 1024 * 1024 * 5,
-  },
-});
-
-const footer = require("./controllers/footer");
-const contact = require("./controllers/contact");
-const becomeTutor = require("./controllers/tutorApply");
-const findTutor = require("./controllers/findTutor");
-const login = require("./controllers/Login");
-const register = require("./controllers/register");
-const post = require("./controllers/Admin");
 const app = express();
 
 //controllers
@@ -41,12 +16,14 @@ app.use(bodyParser.json());
 app.use(cors());
 app.use(express.static("uploads"));
 
+//database details
+//ensure its editted to suit your postgres database
 const db = knex({
   client: "pg",
   connection: {
     host: "127.0.0.1",
     user: "postgres",
-    password: "04102000Iv.",
+    password: "postgress",
     database: "acumen",
   },
 });
@@ -111,16 +88,6 @@ app.get("/", (req, res) => {
   res.json("Api is working");
 });
 
-app.listen(process.env.PORT || 5000, () => {
-  console.log(`app is running on port 5000 || ${process.env.PORT}`);
+app.listen(process.env.PORT || 3000, () => {
+  console.log(`app is running on port 3000 || ${process.env.PORT}`);
 });
-
-// footer carries a post for subscribe
-// contactUs - post for feedback~
-// become a tutor - post for tapplication
-// hub gist - get from admin post
-// find tutor - post for request
-
-// admin page - post for hubgist, post for staffs
-// get from request, tapplication, subscribe, staffs,
-// delete - posts on hubgist, request, tapplication, staff

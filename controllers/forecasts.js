@@ -23,3 +23,7 @@ const handleForcast = (req, res, db) => {
     });
   }
 };
+
+module.exports = {
+  handleForcast,
+};

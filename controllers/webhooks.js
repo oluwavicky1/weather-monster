@@ -1,4 +1,4 @@
-const handleTemperature = (req, res, db) => {
+const handleWebhook = (req, res, db) => {
   const { city_id, callback_url } = req.body;
 
   try {
@@ -50,4 +50,9 @@ const handleDeleteWebhook = (req, res, db) => {
       code: 413,
     });
   }
+};
+
+module.exports = {
+  handleWebhook,
+  handleDeleteWebhook,
 };

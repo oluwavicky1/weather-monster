@@ -29,3 +29,7 @@ const handleTemperature = (req, res, db) => {
     });
   }
 };
+
+module.exports = {
+  handleTemperature,
+};
