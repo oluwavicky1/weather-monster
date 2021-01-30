@@ -19,10 +19,10 @@ npm run nodemon   // this runs the app with nodemon you can use npm start
 
 images of postman examples
 
-![create cities](https://github.com/oluwavicky1/web-monster/uploads/test1.jpg?raw=true)
-![update cities](https://github.com/oluwavicky1/web-monster/uploads/test2.jpg?raw=true)
-![delete cities](https://github.com/oluwavicky1/web-monster/uploads/test3.jpg?raw=true)
-![create temperature](https://github.com/oluwavicky1/web-monster/uploads/test4.jpg?raw=true)
-![get forecast](https://github.com/oluwavicky1/web-monster/uploads/test5.jpg?raw=true)
-![create webhook](https://github.com/oluwavicky1/web-monster/uploads/test6.jpg?raw=true)
-![delete webhook](https://github.com/oluwavicky1/web-monster/uploads/test7.jpg?raw=true)
+![create cities](https://github.com/oluwavicky1/weather-monster/uploads/test1.jpg?raw=true)
+![update cities](https://github.com/oluwavicky1/weather-monster/uploads/test2.jpg?raw=true)
+![delete cities](https://github.com/oluwavicky1/weather-monster/uploads/test3.jpg?raw=true)
+![create temperature](https://github.com/oluwavicky1/weather-monster/uploads/test4.jpg?raw=true)
+![get forecast](https://github.com/oluwavicky1/weather-monster/uploads/test5.jpg?raw=true)
+![create webhook](https://github.com/oluwavicky1/weather-monster/uploads/test6.jpg?raw=true)
+![delete webhook](https://github.com/oluwavicky1/weather-monster/uploads/test7.jpg?raw=true)
